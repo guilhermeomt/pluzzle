@@ -1,8 +1,9 @@
-import { VerticalFeatureRow } from '../feature/VerticalFeatureRow';
-import { Section } from '../layout/Section';
+import { VerticalFeatureRow } from '../components/feature/VerticalFeatureRow';
+import { Section } from '../components/layout/Section';
 
 const VerticalFeatures = () => (
-  <Section yPadding='py-56'
+  <Section
+    yPadding="py-56"
     title="Nossos diferenciais"
     description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus malesuada nisi tellus, non imperdiet nisi tempor at."
   >

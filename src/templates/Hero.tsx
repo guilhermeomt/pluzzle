@@ -1,10 +1,10 @@
 import Link from 'next/link';
 
-import { Background } from '../background/Background';
-import { Button } from '../button/Button';
-import { HeroOneButton } from '../hero/HeroOneButton';
-import { Section } from '../layout/Section';
-import { NavbarTwoColumns } from '../navigation/NavbarTwoColumns';
+import { Background } from '../components/background/Background';
+import { Button } from '../components/button/Button';
+import { HeroOneButton } from '../components/hero/HeroOneButton';
+import { Section } from '../components/layout/Section';
+import { NavbarTwoColumns } from '../components/navigation/NavbarTwoColumns';
 import { Logo } from './Logo';
 
 const Hero = () => (
@@ -12,7 +12,7 @@ const Hero = () => (
     <Section yPadding="py-6">
       <NavbarTwoColumns logo={<Logo xl />}>
         <li>
-          <Link href='/'>
+          <Link href="/">
             <a>Sobre nós</a>
           </Link>
         </li>
@@ -28,9 +28,10 @@ const Hero = () => (
       <HeroOneButton
         title={
           <>
-            Faça quizzes e simulados e 
-            {'\n'}
-            <span className="text-orange-400">divirta-se respondendo perguntas!</span>
+            Faça quizzes e simulados e{'\n'}
+            <span className="text-orange-400">
+              divirta-se respondendo perguntas!
+            </span>
           </>
         }
         description="Participe de jogos coletivos e ganhe prêmios!"

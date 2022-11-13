@@ -1,4 +1,4 @@
-import { Meta } from '../layout/Meta';
+import { Meta } from '../components/layout/Meta';
 import { AppConfig } from '../utils/AppConfig';
 import { Banner } from './Banner';
 import { Footer } from './Footer';
@@ -7,14 +7,14 @@ import { VerticalFeatures } from './VerticalFeatures';
 
 const Base = () => {
   return (
-  <div className="antialiased text-gray-600">
-    <Meta title={AppConfig.title} description={AppConfig.description} />
-    <Hero />
-    <VerticalFeatures />
-    <Banner />
-    <Footer />
-  </div>
-  )
-}
+    <div className="antialiased text-gray-600">
+      <Meta title={AppConfig.title} description={AppConfig.description} />
+      <Hero />
+      <VerticalFeatures />
+      <Banner />
+      <Footer />
+    </div>
+  );
+};
 
 export { Base };

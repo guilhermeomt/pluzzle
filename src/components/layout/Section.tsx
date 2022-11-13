@@ -3,7 +3,7 @@ import { ReactNode } from 'react';
 type ISectionProps = {
   title?: string;
   description?: string;
-  yPadding?: string;  
+  yPadding?: string;
   children: ReactNode;
 };
 
