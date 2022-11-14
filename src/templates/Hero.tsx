@@ -46,7 +46,7 @@ const Hero = () => (
         }
         description="Participe de jogos coletivos e ganhe prêmios!"
         button={
-          <Link href="">
+          <Link href="/demo">
             <a>
               <Button xl>Começar agora</Button>
             </a>
