@@ -13,26 +13,36 @@ const Hero = () => (
       <NavbarTwoColumns logo={<Logo xl />}>
         <li>
           <Link href="/">
-            <a>Sobre nós</a>
+            <a>Planos</a>
           </Link>
         </li>
         <li>
           <Link href="/">
-            <a>Login</a>
+            <a>Saiba mais</a>
+          </Link>
+        </li>
+        <li>
+          <Link href="/">
+            <a>Contato</a>
+          </Link>
+        </li>
+        <li>
+          <Link href="/">
+            <a className="text-orange-600">Entrar</a>
           </Link>
         </li>
       </NavbarTwoColumns>
     </Section>
 
-    <Section yPadding="pt-20 pb-32">
+    <Section yPadding="pt-32 pb-32">
       <HeroOneButton
         title={
-          <>
+          <div className="pt-16">
             Faça quizzes e simulados e{'\n'}
             <span className="text-orange-400">
               divirta-se respondendo perguntas!
             </span>
-          </>
+          </div>
         }
         description="Participe de jogos coletivos e ganhe prêmios!"
         button={

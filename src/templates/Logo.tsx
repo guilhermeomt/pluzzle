@@ -11,11 +11,8 @@ const Logo = (props: ILogoProps) => {
 
   return (
     <span className={`text-gray-900 inline-flex items-center ${fontStyle}`}>
-      <img
-        src='/assets/images/logo.svg'
-        alt="Logo"
-    />
-      
+      <img src="/assets/images/logo.png" alt="Logo" />
+
       {AppConfig.site_name}
     </span>
   );
